@@ -2,8 +2,8 @@ var ray = [];
 
 function salvar(){
    let dados = this.lerDados();
+   this.listar(dados);
    this.adicionar(dados);
-
    console.log(this.ray);
 }
 
@@ -23,4 +23,19 @@ function lerDados(){
 
 function adicionar(dados){
     this.ray.push(dados);
+}
+
+function listar(dados){
+    var nome = document.createElement("p")
+    nome.innerHTML = dados.nome;
+
+    var idade = document.createElement("p")
+    idade.innerHTML = dados.idade;
+
+    var skills = document.createElement("p")
+    skills.innerHTML = dados.skills;
+
+    document.getElementById("resultado").appendChild(nome)
+    document.getElementById("resultado").appendChild(idade)
+    document.getElementById("resultado").appendChild(skills)
 }
