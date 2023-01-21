@@ -1,78 +1,23 @@
-@keyframes animacaoLetras{
-    0% {opacity: 0.6; overflow: hidden;}
-    5% {opacity: 0.7; margin-top: 30px;}
-    10% {opacity: 0.7; margin-top: 27px;}
-    15% {opacity: 0.7; margin-top: 24px;}
-    25% {opacity: 0.9; margin-top: 21px;}
-    35% {opacity: 0.9; margin-top: 19px;}
-    45% {opacity: 0.9; margin-top: 16px;}
-    55% {opacity: 1; margin-top: 13px;}
-    65% {opacity: 1; margin-top: 10px;}
-    75% {opacity: 1; margin-top: 7px;}
-    85% {opacity: 1; margin-top: 4px;}
-    95% {opacity: 1; margin-top: 1px;}
-    100% {opacity: 1;}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2f2325;
 }
 
-.letras{
-    background: none;
-    text-align: right;
-    margin-right: 5%;
-    font-size: 30px;
+h1{
+    color: #e58e7b;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-span{
-    color: #8e24f8;
-}
-
-.letras h2{
-    animation-name: animacaoLetras;
-    animation-duration: 0.5s;
-    text-transform: uppercase;
-    font-size: 100px;
+h2{
     color: white;
 }
 
-.letras p{
-    animation-name: animacaoLetras;
-    animation-duration: 1s;
-    margin-left: 50%;
-    text-align: justify;
-    width: 50%;
-    line-break: auto;
+p{
     color: white;
 }
 
-.criarPersonagem{
-    color: #8e24f8;
-    text-decoration: none;
-    cursor: pointer;
-    border: #8e24f8 4px solid;
-    border-radius: 35px;
-    background-color: transparent;
-    font-size: 30px;
-}
-
-.criarPersonagem:hover{
-    transform: scale(1.1);
-}
-
-@media (min-width:1101px) and (max-width: 1600px) {
-   .letras{
-        font-size: 20px;
-   }
-}
-
-@media (min-width: 500px) and (max-width: 1100px) {
-    .letras h2{
-        font-size: 70px;
-    }
-
-    .letras p{
-        font-size: 20px;
-    }
-    
-    .criarPersonagem{
-        font-size: 25px;
-    }
+.main{
+    background-color: #998a85;
 }

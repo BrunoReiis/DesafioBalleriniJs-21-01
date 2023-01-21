@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./public/css/index.css" rel="stylesheet">
     <title>Ballerini JS</title>
+    <script src="./js/mainScript.js"></script>
+
 </head>
 
 <body>
 
-    
-
+    <h1>Desafio Extra</h1>
+    <div class="main">
+        <div class="cadastrar">
+           
+            <label for="txtNome">Nome:</label>
+            <input type="text" id="nome">
+                
+            <label for="txtIdade">Idade:</label>
+            <input type="text" id="idade">
+                
+            <label for="txtSkills">Skills:</label>
+            <input type="text" id="skills">
+               
+            <input onclick="salvar()" type="submit" id="cadastrar" value="Cadastrar Usuario">
+                
+        </div>
+        <div class="resultado">
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Skills</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
+<!-- 1 botão (cadstrar usuario)
+3 <input type="text"> em caixa de texto (nome,idade,skills)
+1 dicionario (nome,idade,skills) 
+background #2f2325
+desafio extra #998a85
+background container #483636
+borda container #998a85
+caixa de texto #c8b9b2
+Nome, Idade, Skills #86b3b6
+descriçao do nome,... #d8b35e
+textos #e7d9d0
+2 caixas principais, a de cadastrar usuário e Resultado,
+*Container com duas Divs, a cadastrar e a resultado?*
+margin igual de todos lados exceto a top, borda aerredondada, 
+-->
