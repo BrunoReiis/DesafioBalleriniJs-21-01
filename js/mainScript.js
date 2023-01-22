@@ -27,7 +27,7 @@ function adicionar(dados){
 
 function listarConteudo(dados){
     var nome = document.createElement("p")
-    nome.innerHTML = "<p class='Batata'> Nome: </p>" + dados.nome;
+    nome.innerHTML = "Nome: " + dados.nome;
 
     var idade = document.createElement("p")
     idade.innerHTML = "Idade: " + dados.idade;
