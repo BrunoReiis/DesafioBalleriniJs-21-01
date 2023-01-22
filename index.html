@@ -17,28 +17,30 @@
 
 <body>
 
-    <h1>Desafio Extra</h1>
+    <h1>DESAFIO EXTRA</h1>
     <div class="main">
         <div class="cadastrar">
-           
+            <h2>Digite os dados do usuario:</h2>
+
+
             <div>
             <label>Nome:</label>
             <input type="text" id="nome">
             </div>   
             <div>
-            <label>Idade:</label>
+            <label class="idadeLabel">Idade:</label>
             <input type="text" id="idade">
             </div>
             <div>
-            <label>Skills:</label>
+            <label class="skillsLabel">Skills:</label>
             <input type="text" id="skills">
             </div>  
-            <input onclick="salvar()" type="submit" id="cadastrar" value="Cadastrar Usuario">
+            <input class="button" onclick="salvar()" type="submit" id="cadastrar" value="Cadastrar Usuario">
                 
         </div>
         <div class="resultado">
             <div id="conteudo">
-
+                <h2>Resultados:</h2>
             </div>
         </div>
     </div>
