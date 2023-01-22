@@ -2,7 +2,7 @@ var ray = [];
 
 function salvar(){
    let dados = this.lerDados();
-   this.listar(dados);
+   this.listarConteudo(dados);
    this.adicionar(dados);
    console.log(this.ray);
 }
@@ -25,17 +25,17 @@ function adicionar(dados){
     this.ray.push(dados);
 }
 
-function listar(dados){
+function listarConteudo(dados){
     var nome = document.createElement("p")
-    nome.innerHTML = dados.nome;
+    nome.innerHTML = "<p class='Batata'> Nome: </p>" + dados.nome;
 
     var idade = document.createElement("p")
-    idade.innerHTML = dados.idade;
+    idade.innerHTML = "Idade: " + dados.idade;
 
     var skills = document.createElement("p")
-    skills.innerHTML = dados.skills;
+    skills.innerHTML = "Skills: " + dados.skills;
 
-    document.getElementById("resultado").appendChild(nome)
-    document.getElementById("resultado").appendChild(idade)
-    document.getElementById("resultado").appendChild(skills)
+    document.getElementById("conteudo").appendChild(nome)
+    document.getElementById("conteudo").appendChild(idade)
+    document.getElementById("conteudo").appendChild(skills)
 }
